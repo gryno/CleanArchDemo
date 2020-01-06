@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanArch.Infra.Data.Migrations
 {
     [DbContext(typeof(UniversityDBContext))]
-    [Migration("20200105133339_IntiialMigration")]
-    partial class IntiialMigration
+    [Migration("20200106013659_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,7 +38,7 @@ namespace CleanArch.Infra.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Course");
+                    b.ToTable("Courses");
                 });
 #pragma warning restore 612, 618
         }
